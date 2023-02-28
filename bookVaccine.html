@@ -1,12 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir='rtl'>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style/style.css">
     <title>Book</title>
 </head>
 <body>
-    
+    <div role="main" class="main">
+            
+        <div class="container py-5 formContainer">
+            <div class="row">
+                <div class="col">
+                    <h3 class="text-color-quaternary font-weight-bold text-capitalize mb-2">التسجيل للتطعيم</h3>
+                    <p class="mb-4">يرجى قراءة التعليمات الخاصه بالتطعيم و من ثم تعبئة النموذج الخاص
+                        بالتسجيل</p>
+        
+        
+                    <form id="registerFormAdvanced" class="register-form custom-form-style-1 appear-animation animated appear-animation-visible" data-appear-animation="fadeIn" data-appear-animation-delay="100" novalidate="novalidate">
+        
+                        <div class="register-form-success alert alert-success d-none mt-4">
+                            <strong>تم بنجاح!</strong>
+                            <p> تم تسجيلك لتلقي لقاح كوفيد 19 سوف يتم التواصل معك بتاريخ وموعد اللقاح.</p>
+                            <p>الرقم المرجعي الخاص بك : (<strong id="passcode"></strong>)<small> الرجاء حفظ الرقم المرجعي
+                                    لامكانية
+                                    الاستعلام الالكتروني</small></p>
+                        </div>
+        
+                        <div class="register-form-error alert alert-danger d-none mt-4">
+                            <strong>خطأ!</strong> حدث خطأ اثناء الارسال.
+                            <span class="mail-error-message text-1 d-block"></span>
+                        </div>
+        
+
+                        <div class="row">
+                            <div class="form-group col-lg-6 to-hide">
+                                <label for="full_name" class="form-label">الايميل </label>
+                                <input type="email" placeholder=" الايميل" value="" data-msg-required="الرجاء تعبئة الايميل " maxlength="100" class="form-control" name="full_name" id="full_name" required="">
+                            </div>
+                            <div class="form-group col-lg-6 ">
+                                <label class="form-label">تاريخ حجز التطعيم</label>
+                                <input type="date" placeholder="تاريخ حجزالتطعيم" value="" data-msg-required="الرجاء تعبئة تاريخ الميلاد" class="form-control custom-datepicker" name="dob" >
+                            </div>
+        
+        
+                        </div>
+        
+
+                        <div class="row">                
+        
+                            <div class="form-group col col-mobile-12">
+                                <label class="form-label ">مركز التطعيم</label>
+                                <div class="custom-select-1">
+                                    <select class="form-select" name="clinic_id" data-msg-required="الرجاء اختيار مركز التطعيم" required="" aria-invalid="true">
+                                        <option value="">اختر مركز التطعيم</option>
+                                                    <optgroup label="مديرية صحة القدس">
+                                                        <option value="20">العيزرية</option>
+                                                                               
+                                                    </optgroup>
+                                                    <optgroup label="مديرية صحة جنين">
+                                                        <option value="26">مديرية صحة جنين</option>
+                                                                                
+                                                        </optgroup>
+                                                 <optgroup label="مديرية صحة طولكرم">
+                                                        <option value="39">عنبتا</option>
+                                                                           
+                                                        </optgroup>
+                                                   
+                                    </select>
+                                </div>
+                            </div>
+        
+        
+                        </div>
+        
+        
+                        <div class="row mt-3">
+                            <div class="form-group col">
+                                <input type="submit" value="التسجيل الان" id="saveBtn" class="btn btn-primary px-4 py-3 text-center text-uppercase font-weight-semibold" data-loading-text="الرجاء الانتظار...">
+                            </div>
+                        </div>
+                    </form>
+         
+        
+                </div>
+            </div>
+        </div>
+        
+    </div>
 </body>
 </html>

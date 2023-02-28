@@ -230,4 +230,81 @@ form .user-details .input-box{
     background-color: #FFF ;
 }
 
+/* Book Vaccine Style */
+html .text-color-quaternary,
+html .text-quaternary {
+	color: #222529 !important;
+}
+/*
+* Contact Form
+*/
+.custom-form-style-1 .form-control {
+  border: 0;
+  padding: 1.2rem;
+  box-shadow: none !important;
+  height: auto;
+  background: #f4f4f4 !important;
+}
+.custom-form-style-1 .form-select {
+  border: 0;
+  padding: 1.2rem;
+  box-shadow: none !important;
+  height: auto;
+  background-color: #f4f4f4 !important;
+  background-position: left.75rem center;
+}
+html.boxed .main {
+  background-color: #fff;
+  overflow: hidden;
+}
+html.gap-outside .main,
+html.gap-outside #footer {
+  margin-right: 25px;
+  margin-left: 25px;
+}
 
+#header
+  .header-nav-features
+  .header-nav-features-search-reveal-big-search
+  .form-control {
+  border: 0;
+  background: transparent;
+  font-size: 22px !important;
+  line-height: 1;
+  border-bottom: 2px solid #ccc;
+  border-radius: 0;
+  box-shadow: none;
+  position: relative;
+  z-index: 1;
+}
+
+html.dark .accordion .form-control {
+  background-color: #262a2f;
+  border-color: #262a2f;
+}
+.custom-form-style-1 .form-control {
+  border: 0;
+  padding: 1.2rem;
+  box-shadow: none !important;
+  height: auto;
+  background: #f4f4f4 !important;
+}
+.formContainer{
+  width: 70%;
+}
+.input-group-text {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #212529;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #f4f4f4;
+  border: 0;
+  border-radius: 0.25rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 1.5rem;
+}
