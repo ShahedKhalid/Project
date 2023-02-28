@@ -12,7 +12,6 @@ html, body {
 }
 body {
 	font-family: 'Roboto', sans-serif;
-    /* background-color: #f7f7f7 !important; */
     background-color: #FFF;
 }
 .demo-container {
@@ -60,24 +59,6 @@ align-items: center;
 justify-content: center;
 }
 
-/* index style */
-.container{
-    margin-top: 50px;
-}
-.mainList{
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-}
-.card{
-    padding: 20px;
-    background-color: #f4f4f4a3 ;
-    border: none;
-}
-.btn-outline-secondary{
-    background-color: #FFF !important;
-}
-
 
 /* Create Account Style */
 
@@ -88,7 +69,7 @@ justify-content: center;
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
 }
-body{
+.bodyCreateAcc{
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -96,7 +77,7 @@ body{
   padding: 10px;
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
-.container{
+.containerCreateAccount{
   max-width: 700px;
   width: 100%;
   background-color: #fff;
@@ -104,12 +85,12 @@ body{
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
 }
-.container .title{
+.containerCreateAccount .title{
   font-size: 25px;
   font-weight: 500;
   position: relative;
 }
-.container .title::before{
+.containerCreateAccount .title::before{
   content: "";
   position: absolute;
   left: 0;
@@ -119,7 +100,7 @@ body{
   border-radius: 5px;
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
-.content form .user-details{
+.containerCreateAccount form .user-details{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -204,7 +185,7 @@ form .input-box span.details{
   background: linear-gradient(-135deg, #71b7e6, #9b59b6);
   }
  @media(max-width: 584px){
- .container{
+ .containerCreateAccount{
   max-width: 100%;
 }
 form .user-details .input-box{
@@ -223,10 +204,30 @@ form .user-details .input-box{
   }
   }
   @media(max-width: 459px){
-  .container .content .category{
+  .containerCreateAccount .content .category{
     flex-direction: column;
   }
 }
 .title{
 	text-align: center;
 }
+
+/* index style */
+.container{
+    margin-top: 50px;
+}
+.mainList{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+.card{
+    padding: 20px;
+    background-color: #f4f4f4a3 ;
+    border: none;
+}
+.btn-outline-secondary{
+    background-color: #FFF ;
+}
+
+

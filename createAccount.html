@@ -3,70 +3,120 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="Style/style.css">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
-  <div class="container">
-    <div class="title">التسجيل</div>
-    <div class="content">
-      <form action="#">
-        <div class="user-details">
-          
-          <div class="input-box">
-            <span class="details">اسم المستخدم</span>
-            <input type="text" placeholder="اسم المستخدم" required>
-          </div>
-          <div class="input-box">
-            <span class="details">الايميل</span>
-            <input type="text" placeholder="الايميل" required>
-          </div>
-          
-          <div class="input-box">
-            <span class="details">كلمة المرور</span>
-            <input type="text" placeholder="كلمة المرور" required>
-          </div>
-          <div class="input-box">
-            <span class="details">تأكيد كلمة المرور</span>
-            <input type="text" placeholder="تأكيد كلمة المرور" required>
-          </div>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <h1>
+            <a class="navbar-brand" href="#">تطعميات</a>
+          </h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">الصفحة الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">قائمة التطعيمات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">تسجيل الخروج</a>
+              </li>
+           
+            </ul>
 
-          <div class="input-box">
-            <span class="details">اسم الطفل</span>
-            <input type="text" placeholder="اسم الطفل" required>
-          </div>
-
-          <div class="input-box">
-            <span class="details">تاريخ الميلاد </span>
-            <input type="date" placeholder="تاريخ الميلاد" required>
-          </div>
-
-        </div>
-
-        <div class="vaccine-details">
-          <input type="radio" name="gender" id="dot-1">
-          <input type="radio" name="gender" id="dot-2">
-          <input type="radio" name="gender" id="dot-3">
-          <span class="gender-title">هل تلقيت تطعيم سابق؟ </span>
-          <div class="category">
-            <label for="dot-1">
-            <span class="dot one"></span>
-            <span class="gender">نعم</span>
-          </label>
-          <label for="dot-2">
-            <span class="dot two"></span>
-            <span class="gender">لا</span>
-          </label>
-          
           </div>
         </div>
+      </nav>
+  </header>
 
-        <div class="button">
-          <input type="submit" value="التسجيل">
-        </div>
-      </form>
+  <!-- Main -->
+  <main  class="bodyCreateAcc">
+    <div class="containerCreateAccount">
+      <div class="title">التسجيل</div>
+      <div class="content">
+        <form action="#">
+          <div class="user-details">
+            
+            <div class="input-box">
+              <span class="details">اسم المستخدم</span>
+              <input type="text" placeholder="اسم المستخدم" required>
+            </div>
+            <div class="input-box">
+              <span class="details">الايميل</span>
+              <input type="text" placeholder="الايميل" required>
+            </div>
+            
+            <div class="input-box">
+              <span class="details">كلمة المرور</span>
+              <input type="text" placeholder="كلمة المرور" required>
+            </div>
+            <div class="input-box">
+              <span class="details">تأكيد كلمة المرور</span>
+              <input type="text" placeholder="تأكيد كلمة المرور" required>
+            </div>
+
+            <div class="input-box">
+              <span class="details">اسم الطفل</span>
+              <input type="text" placeholder="اسم الطفل" required>
+            </div>
+
+            <div class="input-box">
+              <span class="details">تاريخ الميلاد </span>
+              <input type="date" placeholder="تاريخ الميلاد" required>
+            </div>
+
+          </div>
+
+          <div class="vaccine-details">
+            <input type="radio" name="gender" id="dot-1">
+            <input type="radio" name="gender" id="dot-2">
+            <input type="radio" name="gender" id="dot-3">
+            <span class="gender-title">هل تلقيت تطعيم سابق؟ </span>
+            <div class="category">
+              <label for="dot-1">
+              <span class="dot one"></span>
+              <span class="gender">نعم</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two"></span>
+              <span class="gender">لا</span>
+            </label>
+            
+            </div>
+          </div>
+
+          <div class="button">
+            <input type="submit" value="التسجيل">
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
+  </main>
+    
+  <!-- Footer -->
+  <footer id="footer" class="m-0 bg-color-quaternary">
+    <div class="footer-copyright pt-3 pb-3 container bg-color-quaternary">
+        <div class="row">
+            <div class="col-lg-12 text-center m-0 pb-4">
+                <p class="text-color-default"><a href="#"> تطعيمات </a>© 2023.
+                    جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </div>
+    <!-- Load Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+</footer>
 
 </body>
 </html>
